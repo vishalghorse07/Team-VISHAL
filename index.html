@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Team Vishal Movie Recommendation App</h1>
+        <div id="login">
+            <h2>Select Your Profile</h2>
+            <select id="userSelect">
+                <option value="user1">Vishal (Action)</option>
+                <option value="user2">Sanjay (Comedy)</option>
+                <option value="user3">Esha (Drama)</option>
+                <option value="user4">Omkar (Sci-Fi)</option>
+                <option value="user5">Shreyas (Romance)</option>
+                <option value="user6">Tarleen (Horror)</option>
+                <option value="user7">Bhoomi (Thriller)</option>
+            </select>
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="recommendations" style="display: none;">
+            <h2>Your Four Recommended Movies</h2>
+            <div id="movieList"></div>
+        </div>
+    </div>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.809.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
